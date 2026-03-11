@@ -6,9 +6,8 @@ This repository contains my notes and theory on Networking Fundamentals for cybe
 - [Computer Networking](Computer%20Networking.md)
 - IP Addresses
 - MAC Addresses
-- ISP
+- OSI Model
 - Ports
-- Working of Router
 - TCP/UDP
 - Types of Networks
 
