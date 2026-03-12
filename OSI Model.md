@@ -151,19 +151,72 @@ Name two Application Layer protocols.
 
 ---
 
-# 📚 Next Topics
+# Presentation Layer (OSI Layer 6) 🌐
 
-In the next section we will explore:
+## Overview
+The **Presentation Layer** is the **6th layer of the OSI model**. It acts as a translator and formatter between the **Application Layer** (Layer 7) and the lower layers (like Transport and Network). Its main job is to make sure the data sent by the sender can be understood by the receiver.
 
-- Presentation Layer (Layer 6)
-- Session Layer (Layer 5)
-
-These layers are responsible for:
-
-- Data formatting
-- Encryption
-- Session management
+Think of it as a **language interpreter** for computers.
 
 ---
 
-⭐ This repository is part of my journey to learn **Computer Networking and Cybersecurity basics**.
+## Key Responsibilities
+
+1. **Data Translation**
+   - Converts data from application format to network format and vice versa.
+   - Example: Converting a `.docx` file into a network-friendly format before sending it over the internet.
+
+2. **Data Encryption / Decryption**
+   - Ensures secure data transfer.
+   - Example: HTTPS encrypts data to prevent eavesdropping.
+
+3. **Data Compression / Decompression**
+   - Reduces file size to make transfer faster.
+   - Example: Zipping a file before sending it via email.
+
+4. **Data Formatting**
+   - Converts data into standard formats like text, images, audio, or video.
+
+---
+
+## Real-World Examples
+
+| Task | How Presentation Layer Handles It |
+|------|---------------------------------|
+| Watching Netflix | Converts video into streaming format and compresses it for fast delivery. |
+| Sending an Email | Encrypts the message for security before it goes over the network. |
+| Downloading a PDF | Translates the file into a format your device can read. |
+
+---
+
+## Easy Analogy
+Imagine you are sending a gift to a friend in another country:
+- You **pack** it properly (formatting/compression).
+- You **write instructions in their language** (translation).
+- You **lock it safely** (encryption).  
+The Presentation Layer does all of this for data!
+
+---
+
+## Mini Quiz 📝
+
+1. Which OSI layer is responsible for translating data?  
+   a) Network Layer  
+   b) Presentation Layer  
+   c) Transport Layer  
+
+2. What does the presentation layer do with data before sending over network?  
+   a) Encrypt / Decrypt  
+   b) Compress / Decompress  
+   c) Format / Translate  
+   d) All of the above  
+
+3. Give a real-world example of the Presentation Layer in action.
+
+**Answers:**  
+1 → b  
+2 → d  
+3 → Examples: HTTPS, Streaming videos, Sending PDFs
+
+---
+
