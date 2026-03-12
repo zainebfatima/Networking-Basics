@@ -219,4 +219,126 @@ The Presentation Layer does all of this for data!
 3 → Examples: HTTPS, Streaming videos, Sending PDFs
 
 ---
+# Session Layer (OSI Layer 5) 🔗
 
+## Overview
+The **Session Layer** is the **5th layer of the OSI Model**.  
+Its main job is to **establish, manage, and terminate communication sessions between devices**.
+
+A **session** is simply a **connection between two computers or applications while they are communicating**.
+
+Think of it as a **manager that starts, controls, and ends conversations between devices**.
+
+---
+
+# Main Responsibilities of the Session Layer
+
+## 1. Session Establishment
+The session layer **starts a communication session** between two devices.
+
+Example:
+When you log into a website, a session is created between your computer and the server.
+
+---
+
+## 2. Session Management
+It **keeps the connection active and organized** while data is being exchanged.
+
+Example:
+During a **video call**, the session layer keeps the communication running smoothly.
+
+---
+
+## 3. Session Termination
+When communication is finished, the session layer **closes the session properly**.
+
+Example:
+When you **log out from a website**, the session ends.
+
+---
+
+# Real World Examples
+
+| Activity | How Session Layer Works |
+|--------|--------------------------|
+| Video Meeting | Maintains the communication session between participants |
+| Logging into a Website | Creates a session between the user and the server |
+| Online Gaming | Maintains the gaming connection while players interact |
+| File Transfer | Keeps the connection active until the transfer completes |
+
+---
+
+# Simple Analogy
+
+Imagine you are making a **phone call**.
+
+1. You **dial the number** → Session starts  
+2. You **talk with the other person** → Session maintained  
+3. You **hang up the phone** → Session ends  
+
+The **Session Layer works exactly like this for computers.**
+
+---
+
+# Why Session Layer is Important
+
+Without the session layer:
+
+- Communication sessions could **break suddenly**
+- Devices would not know **when communication starts or ends**
+- Connections would become **disorganized**
+
+The session layer ensures **stable and organized communication**.
+
+---
+
+# Mini Quiz 📝
+
+### Question 1
+Which OSI layer manages communication sessions?
+
+a) Transport Layer  
+b) Session Layer  
+c) Network Layer  
+
+---
+
+### Question 2
+What are the three main functions of the Session Layer?
+
+a) Start, Manage, End sessions  
+b) Routing packets  
+c) Encrypting data  
+
+---
+
+### Question 3
+Give one real-world example where the session layer is used.
+
+---
+
+# Answers
+
+1 → b) Session Layer  
+2 → a) Start, Manage, End sessions  
+3 → Example answers:
+- Video calls
+- Logging into websites
+- Online gaming
+- File transfers
+
+---
+
+# Summary
+
+The **Session Layer (Layer 5)** is responsible for:
+
+- **Establishing sessions**
+- **Managing communication**
+- **Ending sessions**
+
+It ensures that communication between devices happens **in an organized and controlled way**.
+
+---
+
+⭐ If this repository helped you understand networking, consider giving it a star!
