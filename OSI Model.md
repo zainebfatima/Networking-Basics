@@ -340,5 +340,68 @@ The **Session Layer (Layer 5)** is responsible for:
 It ensures that communication between devices happens **in an organized and controlled way**.
 
 ---
+# Transport Layer - OSI Model
 
+## Introduction
+The **Transport Layer** is the **4th layer** of the OSI model. It ensures **reliable data transfer** between two devices on a network and provides **end-to-end communication**.
+
+Key responsibilities:
+- Data transfer
+- Flow control
+- Error detection and correction
+- Segmentation and reassembly
+
+---
+
+## Key Functions
+
+1. **Segmentation and Reassembly**  
+   - Large messages from the application layer are **split into smaller segments**.  
+   - Segments are reassembled at the destination in the correct order.
+
+2. **Flow Control**  
+   - Prevents the sender from overwhelming the receiver.  
+   - Example: **Sliding window protocol**.
+
+3. **Error Detection and Correction**  
+   - Adds checksums to detect errors.  
+   - Retransmits data if errors occur.
+
+4. **Connection Establishment and Termination**  
+   - TCP establishes a reliable connection using a **three-way handshake**.  
+   - Connection is terminated cleanly after communication.
+
+5. **Multiplexing and Demultiplexing**  
+   - Uses **port numbers** to direct data to the correct application.  
+   - Example: HTTP → port 80, HTTPS → port 443
+
+---
+
+## Protocols
+
+| Protocol | Type               | Reliability | Use Case                      |
+|----------|------------------|------------|-------------------------------|
+| TCP      | Connection-oriented | Reliable   | Web browsing, email, file transfer |
+| UDP      | Connectionless     | Unreliable | Video streaming, gaming, VoIP |
+| SCTP     | Connection-oriented | Reliable   | Telecommunication signaling    |
+
+---
+
+## Real-World Example
+
+**TCP example:** Sending a large file over the internet:
+1. File is **split into segments**.
+2. Each segment is **numbered** and sent individually.
+3. Receiver checks for **missing/corrupted segments** and requests **retransmission** if needed.
+4. Segments are **reassembled** into the original file.
+
+**UDP example:** Streaming video:
+- Packets are sent without waiting for confirmation.
+- If some packets are lost, the video may drop frames, but the stream continues smoothly.
+
+---
+
+## References
+- [OSI Model - Wikipedia](https://en.wikipedia.org/wiki/OSI_model)  
+- [TCP/IP Explained](https://www.geeksforgeeks.org/tcp-ip-model/)
 ⭐ If this repository helped you understand networking, consider giving it a star!
