@@ -404,4 +404,675 @@ Key responsibilities:
 ## References
 - [OSI Model - Wikipedia](https://en.wikipedia.org/wiki/OSI_model)  
 - [TCP/IP Explained](https://www.geeksforgeeks.org/tcp-ip-model/)
+- # 🌐 Network Layer (OSI Layer 3)
+
+## 📌 Introduction
+
+The **Network Layer** is the **third layer of the OSI (Open Systems Interconnection) Model**.
+
+Its main purpose is to **send data from one network to another network** and ensure that data reaches the **correct destination device**.
+
+The Network Layer is responsible for:
+- Logical addressing
+- Routing
+- Packet forwarding
+- Fragmentation
+
+It determines the **best path for data to travel across networks**.
+
+---
+
+## 🎯 Responsibilities of Network Layer
+
+### 1. Logical Addressing
+
+Every device on a network must have a **logical address** so it can be identified across different networks.
+
+Example:
+
+```
+192.168.1.1
+```
+
+This address is known as an **IP Address**.
+
+The Network Layer uses IP addresses to **identify source and destination devices**.
+
+---
+
+### 2. Routing
+
+Routing means **selecting the best path for data to travel from source to destination**.
+
+Routers analyze different paths and decide the **most efficient route**.
+
+Example:
+
+```
+Computer → Router → Internet → Router → Destination Computer
+```
+
+---
+
+### 3. Packet Forwarding
+
+After the best path is selected, routers **forward packets toward the destination network**.
+
+Each router moves the packet **closer to the final destination**.
+
+---
+
+### 4. Fragmentation
+
+Different networks support different packet sizes.
+
+If a packet is **too large**, the Network Layer **breaks it into smaller packets** so it can travel through different networks.
+
+---
+
+## 📦 Data Unit of Network Layer
+
+The data unit used in the Network Layer is called a:
+
+**Packet**
+
+Encapsulation process:
+
+```
+Data → Segment → Packet → Frame → Bits
+```
+
+---
+
+## 🖥 Devices Used at Network Layer
+
+### Router
+
+A **Router** is the main device used at the Network Layer.
+
+Functions of a Router:
+
+- Connects multiple networks
+- Determines the best path for packets
+- Forwards packets to the destination network
+
+Example:
+
+```
+Home Network → Router → Internet → Router → Office Network
+```
+
+---
+
+## 📜 Network Layer Protocols
+
+Some common Network Layer protocols include:
+
+| Protocol | Description |
+|--------|-------------|
+| IP (Internet Protocol) | Provides logical addressing |
+| ICMP (Internet Control Message Protocol) | Used for error reporting and diagnostics |
+| ARP (Address Resolution Protocol) | Maps IP address to MAC address |
+| IPsec | Provides security for IP communication |
+
+---
+
+## 🌍 Real World Example
+
+Imagine you send a **message on WhatsApp**.
+
+1. Your phone sends the message.
+2. The message is divided into packets.
+3. Packets are sent to your WiFi router.
+4. Routers on the internet find the best path.
+5. Packets reach your friend's phone.
+
+The Network Layer works like **Google Maps for data**, finding the best route.
+
+---
+
+## 🧠 Simple Analogy
+
+Think of the Network Layer like a **postal delivery system**.
+
+| Postal System | Network Layer |
+|---------------|---------------|
+| Home Address | IP Address |
+| Delivery Routes | Routing |
+| Post Office | Router |
+| Parcel | Packet |
+
+Just like the postal service delivers parcels using addresses, the Network Layer delivers packets using IP addresses.
+
+---
+
+## 🧩 Mini Quiz
+
+### Q1
+Which OSI layer is responsible for routing?
+
+A) Transport Layer  
+B) Network Layer  
+C) Session Layer  
+D) Physical Layer  
+
+---
+
+### Q2
+What is the data unit of the Network Layer?
+
+A) Frame  
+B) Packet  
+C) Segment  
+D) Bit  
+
+---
+
+### Q3
+Which device operates at the Network Layer?
+
+A) Switch  
+B) Router  
+C) Hub  
+D) Repeater  
+
+---
+
+### Q4
+What does IP stand for?
+
+A) Internet Process  
+B) Internet Protocol  
+C) Internal Packet  
+D) Internet Program  
+
+---
+
+### Q5
+Which protocol is used for error reporting?
+
+A) TCP  
+B) ICMP  
+C) FTP  
+D) SMTP  
+
+---
+
+## ✅ Quiz Answers
+
+```
+Q1: B
+Q2: B
+Q3: B
+Q4: B
+Q5: B
+```
+
+---
+
+## 🎓 Conclusion
+
+The **Network Layer** is responsible for delivering data across different networks using **IP addressing and routing**.
+# 🔗 Data Link Layer (OSI Layer 2)
+
+## 📌 Introduction
+
+The **Data Link Layer** is the **second layer of the OSI (Open Systems Interconnection) Model**.
+
+It is responsible for **reliable communication between two directly connected devices on the same network**.
+
+The Data Link Layer ensures that **data is transferred without errors between neighboring network nodes**.
+
+It also controls **how data is placed on the physical medium**.
+
+---
+
+## 🎯 Responsibilities of Data Link Layer
+
+### 1. Framing
+
+The Data Link Layer **divides packets into smaller units called frames**.
+
+A **frame** contains:
+- Source MAC Address
+- Destination MAC Address
+- Data
+- Error detection information
+
+Example:
+
+```
+| Destination MAC | Source MAC | Data | Error Check |
+```
+
+---
+
+### 2. Physical Addressing (MAC Address)
+
+Each device on a network has a **unique MAC Address (Media Access Control Address)**.
+
+Example MAC Address:
+
+```
+00:1A:2B:3C:4D:5E
+```
+
+The Data Link Layer uses MAC addresses to **identify devices within the same network**.
+
+---
+
+### 3. Error Detection
+
+Sometimes errors occur during transmission.
+
+The Data Link Layer detects errors using techniques like:
+
+- **CRC (Cyclic Redundancy Check)**
+- Parity checks
+
+If an error is detected, the frame may be **discarded or retransmitted**.
+
+---
+
+### 4. Flow Control
+
+Flow control ensures that **the sender does not overwhelm the receiver with too much data**.
+
+It helps maintain **smooth data transmission** between devices.
+
+---
+
+### 5. Access Control
+
+When multiple devices share the same communication channel, the Data Link Layer determines **which device can transmit data at a particular time**.
+
+This prevents **data collisions**.
+
+---
+
+## 📦 Data Unit of Data Link Layer
+
+The data unit used at the Data Link Layer is called a:
+
+**Frame**
+
+Encapsulation process:
+
+```
+Data → Segment → Packet → Frame → Bits
+```
+
+---
+
+## 🖥 Devices Used at Data Link Layer
+
+### Switch
+
+A **Switch** operates at the Data Link Layer.
+
+Functions of a Switch:
+
+- Connects devices in a Local Area Network (LAN)
+- Uses MAC addresses to forward frames
+- Reduces network collisions
+
+Example:
+
+```
+Computer → Switch → Computer
+```
+
+---
+
+## 📜 Data Link Layer Protocols
+
+Some common Data Link Layer protocols include:
+
+| Protocol | Description |
+|--------|-------------|
+| Ethernet | Most common LAN technology |
+| PPP (Point-to-Point Protocol) | Used for direct connections between two devices |
+| HDLC (High-Level Data Link Control) | Provides reliable data transfer |
+| Frame Relay | Used for packet-switched networks |
+
+---
+
+## 🌍 Real World Example
+
+Imagine you are sending a **file to another computer on the same WiFi network**.
+
+Steps:
+
+1. Your computer creates data.
+2. The Network Layer converts it into packets.
+3. The Data Link Layer converts packets into frames.
+4. The switch reads the MAC address.
+5. The frame is delivered to the correct device.
+
+---
+
+## 🧠 Simple Analogy
+
+Think of the Data Link Layer like **a door-to-door delivery inside a building**.
+
+| Real Life | Data Link Layer |
+|----------|----------------|
+| Apartment number | MAC Address |
+| Package | Frame |
+| Building hallway | Local Network |
+| Delivery person | Switch |
+
+The delivery person delivers the package **to the correct apartment inside the building**, just like the Data Link Layer delivers frames **within the same network**.
+
+---
+
+## 🧩 Mini Quiz
+
+### Q1  
+What is the data unit of the Data Link Layer?
+
+A) Packet  
+B) Frame  
+C) Segment  
+D) Bit  
+
+---
+
+### Q2  
+Which address does the Data Link Layer use?
+
+A) IP Address  
+B) MAC Address  
+C) Port Number  
+D) URL  
+
+---
+
+### Q3  
+Which device operates at the Data Link Layer?
+
+A) Router  
+B) Switch  
+C) Hub  
+D) Modem  
+
+---
+
+### Q4  
+What does MAC stand for?
+
+A) Media Access Control  
+B) Machine Access Code  
+C) Memory Access Control  
+D) Main Address Code  
+
+---
+
+### Q5  
+Which technology is commonly used in LAN networks?
+
+A) Ethernet  
+B) HTTP  
+C) SMTP  
+D) FTP  
+
+---
+
+## ✅ Quiz Answers
+
+```
+Q1: B
+Q2: B
+Q3: B
+Q4: A
+Q5: A
+```
+
+---
+
+## 🎓 Conclusion
+
+The **Data Link Layer** ensures reliable communication between devices on the same network using **MAC addresses and frames**.
+
+# ⚡ Physical Layer (OSI Layer 1)
+
+## 📌 Introduction
+
+The **Physical Layer** is the **first and lowest layer of the OSI (Open Systems Interconnection) Model**.
+
+It is responsible for **transmitting raw bits (0s and 1s) over a physical medium** such as cables, radio waves, or fiber optics.
+
+The Physical Layer focuses on the **actual hardware and physical connections** used to transmit data.
+
+It defines:
+
+- Electrical signals
+- Data transmission rates
+- Physical connectors
+- Network cables
+
+---
+
+## 🎯 Responsibilities of Physical Layer
+
+### 1. Bit Transmission
+
+The Physical Layer converts data into **binary bits (0s and 1s)** and sends them over the network medium.
+
+Example:
+
+```
+101101001011
+```
+
+These bits travel as **electrical signals, light signals, or radio waves**.
+
+---
+
+### 2. Physical Connection
+
+This layer defines how devices are **physically connected** to the network.
+
+Examples include:
+
+- Ethernet cables
+- Fiber optic cables
+- Wireless signals
+
+---
+
+### 3. Data Transmission Mode
+
+The Physical Layer determines **how data flows between devices**.
+
+Types of transmission modes:
+
+| Mode | Description |
+|-----|-------------|
+| Simplex | Data flows in one direction only |
+| Half-Duplex | Data flows both ways but one at a time |
+| Full-Duplex | Data flows both ways simultaneously |
+
+---
+
+### 4. Data Rate Control
+
+The Physical Layer determines **how fast data is transmitted**.
+
+Example:
+
+- 100 Mbps
+- 1 Gbps
+- 10 Gbps
+
+---
+
+### 5. Signal Encoding
+
+The Physical Layer converts binary data into **signals that can travel through the medium**.
+
+Types of signals include:
+
+- Electrical signals
+- Light signals
+- Radio waves
+
+---
+
+## 📦 Data Unit of Physical Layer
+
+The data unit used at the Physical Layer is called:
+
+**Bit**
+
+Encapsulation process:
+
+```
+Data → Segment → Packet → Frame → Bits
+```
+
+---
+
+## 🖥 Devices Used at Physical Layer
+
+### Hub
+
+A **Hub** operates at the Physical Layer.
+
+Functions of a Hub:
+
+- Connects multiple devices in a network
+- Broadcasts data to all connected devices
+- Does not filter or manage traffic
+
+Example:
+
+```
+Computer → Hub → Computer
+```
+
+---
+
+### Other Physical Layer Devices
+
+Other devices include:
+
+- Repeaters
+- Network cables
+- Connectors
+- Network Interface Cards (NIC)
+
+---
+
+## 📜 Physical Layer Technologies
+
+Common technologies used in the Physical Layer:
+
+| Technology | Description |
+|-----------|-------------|
+| Ethernet Cables | Used for wired networks |
+| Fiber Optics | Uses light signals for high-speed communication |
+| WiFi Signals | Wireless communication using radio waves |
+| Bluetooth | Short-range wireless communication |
+
+---
+
+## 🌍 Real World Example
+
+Imagine sending a **message from your laptop to a router**.
+
+Steps:
+
+1. Data is created on your laptop.
+2. It moves through the OSI layers.
+3. At the Physical Layer, the data becomes **binary bits (0s and 1s)**.
+4. These bits are transmitted through **cables or wireless signals**.
+5. The receiving device converts signals back into data.
+
+---
+
+## 🧠 Simple Analogy
+
+Think of the Physical Layer like **a road used by delivery trucks**.
+
+| Real Life | Physical Layer |
+|----------|---------------|
+| Road | Network cable |
+| Vehicle signals | Electrical signals |
+| Package movement | Bit transmission |
+
+Without roads, delivery cannot happen.  
+Similarly, without the Physical Layer, **data cannot physically travel across the network**.
+
+---
+
+## 🧩 Mini Quiz
+
+### Q1
+Which OSI layer is responsible for transmitting raw bits?
+
+A) Network Layer  
+B) Physical Layer  
+C) Transport Layer  
+D) Session Layer  
+
+---
+
+### Q2
+What is the data unit of the Physical Layer?
+
+A) Frame  
+B) Packet  
+C) Bit  
+D) Segment  
+
+---
+
+### Q3
+Which device operates at the Physical Layer?
+
+A) Router  
+B) Switch  
+C) Hub  
+D) Firewall  
+
+---
+
+### Q4
+Which medium uses light signals to transmit data?
+
+A) Ethernet Cable  
+B) Fiber Optic Cable  
+C) WiFi  
+D) Bluetooth  
+
+---
+
+### Q5
+What type of signals can be used for transmission?
+
+A) Electrical Signals  
+B) Light Signals  
+C) Radio Waves  
+D) All of the Above  
+
+---
+
+## ✅ Quiz Answers
+
+```
+Q1: B
+Q2: C
+Q3: C
+Q4: B
+Q5: D
+```
+
+---
+
+## 🎓 Conclusion
+
+The **Physical Layer** is responsible for the **actual transmission of data through physical media**.
+
+It converts digital data into **signals that travel through cables, fiber optics, or wireless networks**, making communication between devices possible..
 ⭐ If this repository helped you understand networking, consider giving it a star!
